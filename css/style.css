@@ -1,0 +1,596 @@
+
+/* For Grouped Elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#body {
+    background-color: #ffb380;
+}
+
+.activities-body {
+    overflow-x:auto;
+}
+
+.imgfade {
+    animation-name: imgfade;
+    animation-duration: 1.5s;
+}
+
+@keyframes imgfade {
+    from {opacity: 0.4;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+.boxcontent {
+    position:relative;
+    right:25vw;
+    top:22vw;
+    height:20vw;
+    background-color: black;
+    padding:1vw;
+}
+
+.header {
+    display:none;
+}
+
+/* Menu/Navbar */
+#navbar {
+    justify-content: space-around;
+    font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5em;
+    position:fixed;
+    top:0;
+    z-index: 9999;
+}
+
+#navbar a {
+    display:block;
+	color: 	white;
+	padding: 1em 1.5em;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.nav-left {
+    float: left;
+    display:block;
+}
+
+.nav-right {
+    float: right;
+}
+
+#navbar ul {
+	display: flex;
+	justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-right a:hover {
+    background-color: #e76f51;
+}
+
+@media all and (max-width: 1093px) {
+    #navbar .nav-left{
+        display:none;
+    }
+}
+
+@media all and (max-width: 700px) {
+    #navbar {
+        font-size: 2.4vw;
+    }
+}
+
+/* Footer */
+footer {  
+    position:relative;
+    font-family: Georgia, Arial, sans-serif;
+	font-size: 45px;
+    background-color: black;
+    height:150px;
+    width:100%;
+    margin-top:23vw;
+}
+
+footer ul {
+    list-style: none;
+    color:white;
+}
+
+.fabout {
+    float:left;
+}
+.fabout:hover {
+    background-color: #e76f51;
+}
+
+.logo2 {
+    float:right;
+}
+
+/* Home Page*/
+
+.slogan {
+    font-family: Georgia, Arial, sans-serif;
+    font-size: 92px;
+    color: white;
+    position: absolute;
+    left: 18%;
+    bottom: 25%;
+}
+
+.dot {
+    height: 1em;
+    width: 1em;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.second{
+    font-family: Georgia, Arial, sans-serif;  
+}
+
+article {  
+    padding: 0% 20% 0% 20%;
+    display:flex;
+}
+
+h2 {
+    font-size: 4vw;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+article p {
+    font-size: 1em;
+    color: black;
+}
+
+.looksky {
+    padding: 0% 20% 0% 20%;
+}
+
+.home-activity {
+    margin-top:23vw;
+}
+
+.home-discover {
+    margin-top:23vw;
+}
+
+.home-foodandbev {
+    margin-top: 23vw;
+}
+article h2 {
+    color:white;
+    color:orange;
+    width:35vw;
+}
+
+.ourcompany h2{
+    color:white;
+}
+
+#boxcontent2 {
+    top:20vw;
+}
+
+#boxcontent3 {
+    top:43vw;
+}
+
+#boxcontent4 {
+    top:25vw;
+}
+
+.description {
+    color: white;
+    margin-top:3vw;
+}
+
+.readmore {
+    text-decoration: underline;
+    position:absolute;
+    color: orange;
+    font-size:2em;
+    bottom:0;
+    right:0;
+    padding:1vw;
+}
+
+@media all and (max-width: 1400px) {
+    .slogan{
+        display:none;
+    }
+
+    #boxcontent4 {
+        height:23vw;
+    }
+
+    .readmore {
+        font-size:2vw;
+    }
+    .description {
+        font-size:1.5vw;
+    }
+
+    .home-activity {
+        margin-top:12vw;
+    }
+    
+    .home-discover {
+        margin-top:12vw;
+    }
+    
+    .home-foodandbev {
+        margin-top: 12vw;
+    }
+    #stay-footer {
+        margin-top: 30vw;;
+    }
+}
+
+@media all and (max-width: 800px) {
+    article {
+        padding: 0% 5% 0% 5%;
+    }
+    .looksky {
+        padding: 0% 5% 0% 5%;
+        min-width: 90%;
+    }
+
+    .boxcontent {
+        top:30vw;
+        height:53vw;
+    }
+
+    #boxcontent3 {
+        top:60vw;
+        height:38vw;
+    }
+
+    #boxcontent4 {
+        top:30vw;
+        height:50vw;
+    }
+
+    .readmore {
+        font-size:4vw;
+    }
+    .description {
+        font-size:3vw;
+    }
+
+    .home-activity {
+        margin-top:37vw;
+    }
+    
+    .home-discover {
+        margin-top:27vw;
+    }
+    
+    .home-foodandbev {
+        margin-top: 24vw;
+    }
+    footer {
+        display:none;
+    }
+}
+
+/* Stay/Accommodation Page */
+
+.company {
+    margin-bottom: 10vw;
+}
+
+.company h2 {
+    color:white;
+}
+
+.accommodation3 {
+    margin-top:22vw;
+}
+
+.standard {
+    margin-bottom: 30vw;
+}
+
+#boxcontent5 {
+    top:15vw;
+    height:29vw;
+}
+
+#boxcontent6 {
+    top:22vw;
+    height:20vw;
+}
+
+#boxcontent7 {
+    top:27vw;
+}
+
+.booknow {
+    position:absolute;
+    color: orange;
+    font-size:2vw;
+    bottom:0;
+    right:0;
+    padding:1vw;
+}
+
+.booknow:hover {
+    color:white;
+    background-color: orange;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.overlay-content {
+    position:fixed;
+    display:none;
+    top:10vw;
+    left:30%;
+    right:30%;
+    background-color:grey;
+    color:#7F7F7F;
+    padding:25px;
+    border:2px solid grey;
+    z-index:3;
+}
+
+label {
+    display:block;
+    font-family: Georgia, Arial, sans-serif;
+    font-size:2vw;
+    color:grey;
+}
+
+.submit {
+    display:block;
+    margin-top:1vw;
+    padding: 15px 25px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: orange;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.submit:active {
+    transform: translateY(4px);
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+}
+
+@media all and (max-width: 1400px) {
+    #boxcontent5 {
+        height:46vw;
+    }
+
+    #boxcontent6 {
+        height:34vw;
+    }
+
+    #boxcontent7 {
+        height:32vw;
+    }
+
+    .accommodation {
+        margin-top:5vw;
+    }
+
+    .accommodation3 {
+        margin-top:24vw;
+    }
+
+}
+
+@media all and (max-width: 800px) {
+    .overlay-content {
+        top:40vw;
+        left:5%;
+        right:5%;
+        padding:1.3vw;
+        border:2px solid white;
+        z-index:3;
+    }
+
+    #boxcontent5 {
+        height:98vw;
+    }
+
+    #boxcontent6 {
+        height:88vw;
+    }
+
+    #boxcontent7 {
+        height:65vw;   
+    }
+
+    .accommodation {
+        margin-bottom: 27vw;
+    }
+}
+
+/* Activities Page */
+
+.activity {
+    margin-bottom:18vw;
+}
+
+#boxcontent8 {
+    top:25vw;
+    height:24vw;
+}
+
+#boxcontent9 {
+    top:25vw;
+    height:24vw;
+}
+
+#boxcontent10 {
+    top:29vw;
+    height:18vw;
+}
+
+@media all and (max-width: 1400px) {
+    #boxcontent8 {
+        height: 36vw;
+    }
+
+    #boxcontent9 {
+        height: 36vw;
+    }
+
+    .activity {
+        margin-bottom: 30vw;
+    } 
+}
+
+@media all and (max-width: 800px) {
+    #boxcontent8 {
+        height:100vw;
+    }
+
+    #boxcontent9 {
+        height:88vw;
+    }
+    #boxcontent10 {
+        height:47vw;
+    }
+    
+}
+
+/* Discover Page */
+
+#disc-second {
+    margin-top:5vw ;
+}
+
+#rand-button {
+    margin:5vw auto;
+}
+
+#image {
+    width: 80%;
+    margin:auto;
+}
+
+#image img {
+    max-width: 100%;
+}
+
+/* Food and Beverages Page */
+
+#boxcontent11 {
+    top:32vw;
+    height:13vw;
+}
+
+#boxcontent12 {
+    height:19vw;
+}
+
+.foodandbevpage {
+    margin-bottom:14vw;
+}
+
+
+#mainmenu {
+    font-size:30px;
+}
+
+#mainmenu:hover {
+    cursor: pointer;
+    color:red;
+}
+
+#foodmenu {
+    background-color: orange !important;
+    width: 60% !important;
+    left:20% !important;
+    top: 10% !important;
+    border:0px !important;
+}
+
+@media all and (max-width: 1400px) {
+    #boxcontent11 {
+        height:20vw;
+    }
+
+    #boxcontent12 {
+        height:26vw;
+    }
+}
+
+@media all and (max-width: 800px) {
+    #boxcontent11 {
+        height:47vw;
+    }
+
+    #boxcontent12 {
+        height:64vw;
+    }
+
+    .foodandbevpage {
+        margin-top:20vw;
+    }
+}
+
+/* About Page */
+
+#about-second {
+    margin-top: 5vw;
+}
+
+#about-us {
+    display:block !important;
+    text-align: center;
+}
+
+#about-second h2 {
+    text-align: center ;
+    margin-left:auto ;
+    margin-right: auto;
+    width: 100%;
+}
+
+#referencelist {
+    display:block;
+    text-align: left;
+    list-style-position: inside;
+}
+
+#referencelist h2{
+    color:white !important;
+}
