@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">  
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Jason Pham">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home</title>
+		<link rel="stylesheet" href="css/style.css">
+        <script src = "js/jquery-3.6.0.min.js"> </script>
+	</head>
+	<body class = "home-body" id = "body">
+        <nav id= "navbar" style = "width: 100%;">
+            <ul class="nav-left">
+                <li class ="logo"><a href="Index.html"><img src="images&files/transparentlogo.png" alt="Opportunity Logo" width = "224" height = "126"></a></li>
+            </ul>
+
+            <ul class="nav-right">
+                <li class = "home">
+                    <a href="#">Home</a>
+                </li>
+                <li class = "stay">
+                    <a href="Stay.html">Stay</a>
+                </li>
+                <li class = "activities">
+                    <a href="Activities.html">Activities</a>
+                </li>
+                <li class = "discover">
+                    <a href="Discover.html">Discover</a>
+                </li>
+                <li class = "foodandbev">
+                    <a href="Foodandbev.html">Food and Beverages</a>
+                </li>
+                <li class = "about">
+                    <a href="About.html">About</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class = "image-slider">
+            <img class="mySlides imgfade" src="images&files/Planets.jpg" alt ="Planets" style="width:100%">
+            <img class="mySlides imgfade" src="images&files/marshouse.jpeg" alt ="House on Mars" style="width:100%;">
+            <img class="mySlides imgfade" src="images&files/astronaut2.png" alt ="Astronaut" style="width:100%;">
+            <img class="mySlides imgfade" src="images&files/astronaut3.jpg" alt ="Astronaut 2" style="width:100%;">
+
+            <h1 class = "slogan">Escape From Technology</h1>
+
+            <ul class = "dots" style="text-align:center">
+                <li class="dot" onclick="current_image(1)"></li>
+                <li class="dot" onclick="current_image(2)"></li>
+                <li class="dot" onclick="current_image(3)"></li>
+                <li class="dot" onclick="current_image(4)"></li>
+            </ul>
+        </section>
+
+        <section class = "second">
+            <h2 class ="header">header</h2>
+            <article class = "ourcompany">
+                <h2 >Our Company</h2>
+                <p class = "company-text">
+                <strong>Opportunity Resort & Services</strong> is located on planet Mars
+                 and is the ideal gateway to escape from the modern world
+                  of technology, providing both comfortability and the
+                   feeling of living in a pre-digital age. Our company 
+                   was founded in 2011 and has been highly reputable 
+                   throughout the world due to our consistency in delivering
+                    promises we made of good resorts, services, and an
+                     enjoyable adventure on Mars whether you are by yourself
+                      or with your family. 
+                      <br>
+                      <br>
+                Our resort locations are extremely versatile, covering the 
+                entirety of Mars to give you many different options on the 
+                place you want to stay. However, do not be alarmed about it
+                 being too confusing due to this, our team will personally
+                  assist in finding the right place for you and making sure 
+                  your experience with our website is as perfect as possible.
+                  <br>
+                  <br>   
+                There is a range of fun activities for you to enjoy for both
+                 you and your family to enjoy. They will keep you busily 
+                 entertained throughout your whole adventure, making sure not
+                  a single second of your time will be boring.
+                  <br>
+                  <br>
+                Other than activities, you can also choose to visit famously
+                 known listed locations on our website. They are known to be 
+                 extremely beautiful which will surely make you want to stay
+                  there until the end of time.
+                  <br>
+                  <br>
+                There is an expanded food and beverage offerings across
+                 different locations, provided by our company. We have
+                  food that you have never tasted here on Mars that is 
+                  guaranteed to make you want to take a second bite.                
+            </p>
+            </article>
+
+            <img class="looksky" src="images&files/skylook2.jpg" alt ="People enjoying Mars" style="width:60%">
+            <h2 class = "service">Our Services</h2>
+
+            <article class = "accommodation">
+                <h2 class ="header">header</h2>
+
+                <img class="cave" src="images&files/cave.jpeg" alt ="Man standing in cave" style="width:86%">
+                <section class = "boxcontent" id ="boxcontent1"> 
+                    <h2>Accommodation</h2>  
+                    <p class = "description">
+                        We are extremely proud of to present many different
+                         accommodations for your choices. Whether you desire
+                          our extreme end options such as “Caveman
+                           Accommodation” or the normal choice of
+                            “Standard Mars Accommodation”, we have 
+                            it all for you. 
+                    </p>
+                    <p class = "readmore"><a href = Stay.html style="text-decoration:none; color:inherit;">Read More</a></p>
+                </section>
+            </article>
+
+            <article class = "home-activity"> 
+                <h2 class ="header">header</h2>
+
+                <img class="play" src="images&files/marplay.jpg" alt ="Girl focused on device" style="width:86%">
+                <section class = "boxcontent" id ="boxcontent2">
+                    <h2>Activity</h2>  
+                    <p class = "description">
+                        Whether you want to enjoy the fun by yourself or with a
+                         group of close friends/family, there are a variety of 
+                         activities for you to do. Here at Opportunity resort, 
+                         we specialise in providing you with the best experience
+                          you could ever ask for.
+                    </p>
+                    <p class = "readmore"><a href ="Activities.html" style="text-decoration:none; color:inherit;">Read More</a></p>
+                </section>
+            </article>
+            
+            <article class = "home-discover"> 
+                <h2 class ="header">header</h2>
+                <img class="rock" src="images&files/rock2.jpg" alt ="Mars rock" style="width:86%">
+
+                <section class = "boxcontent" id ="boxcontent3">
+                    <h2>Discover</h2>  
+                    <p class = "description">
+                        There are many famously known locations on Mars that
+                         people are dying to visit. However, there also many
+                          hidden gems that are yet to be discovered. Could
+                           you be the first one?
+                    </p>
+                    <p class = "readmore"><a href ="Discover.html" style="text-decoration:none; color:inherit;">Read More</a></p>
+                </section>
+            </article>
+
+            <article class = "home-foodandbev"> 
+                <h2 class ="header">header</h2>
+                <img class="food" src="images&files/food.jpg" alt ="Food and cutlery" style="width:86%">
+        
+                <section class = "boxcontent" id ="boxcontent4">
+                    <h2>Food and Beverages</h2>  
+                    <p class = "description">
+                        At our company, we have many different restaurants 
+                        across Mars that are delicious and affordable. Aside
+                         from your standard dines, we also special exotic 
+                         food that you need to at least try once in your life.  
+                    </p>
+                    <p class = "readmore"><a href ="Discover.html" style="text-decoration:none; color:inherit;">Read More</a></p>
+                </section>
+            </article>
+
+        </section>
+
+        <footer>
+            <ul>
+                <li class = "fabout">
+                    <a href="About.html" style="text-decoration:none; color:inherit;">About Our Company</a>
+                </li>
+    
+                <li class ="logo2"><a href="Index.html" style="text-decoration:none; color:inherit;">
+                    <img src="images&files/transparentlogo.png" alt="Opportunity Logo" width = "224" height = "126"></a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/script.js"></script> 
+	</body>
+</html>

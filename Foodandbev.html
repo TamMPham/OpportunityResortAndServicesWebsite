@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">  
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Jason Pham">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Food and Beverages</title>
+		<link rel="stylesheet" href="css/style.css">
+        <script src = "js/jquery-3.6.0.min.js"> </script>
+	</head>
+	<body class = "foodandbev-body" id = "body">
+        <nav id= "navbar" style = "width: 100%;">
+            <ul class="nav-left">
+                <li class ="logo"><a href="Index.html"><img src="images&files/transparentlogo.png" alt="Opportunity Logo" width = 224 height = 126></a></li>
+            </ul>
+
+            <ul class="nav-right">
+                <li class = "home">
+                    <a href="Index.html">Home</a>
+                </li>
+                <li class = "stay">
+                    <a href="Stay.html">Stay</a>
+                </li>
+                <li class = "activities">
+                    <a href="Activities.html">Activities</a>
+                </li>
+                <li class = "discover">
+                    <a href="Discover.html">Discover</a>
+                </li>
+                <li class = "foodandbev">
+                    <a href="#">Food and Beverages</a>
+                </li>
+                <li class = "about">
+                    <a href="About.html">About</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <section class = "image-slider">
+            <img class="mySlides imgfade" src="images&files/food.jpg" alt ="Food and cutlery" style="width:100%;">
+            <img class="mySlides imgfade" src="images&files/nutbar.jpg" alt ="Fried Nutbars on sticks" style="width:100%;">
+            <img class="mySlides imgfade" src="images&files/wine.jpg" alt ="2 People drinking wine" style="width:100%;">
+            <img class="mySlides imgfade" src="images&files/steak.jpg" alt ="Steak and Potato" style="width:100%;">
+
+            <h1 class = "slogan">Featured Food and Bev</h1>
+            
+            <ul class = "dots" style="text-align:center">
+                <li class="dot" onclick="current_image(1)"></li>
+                <li class="dot" onclick="current_image(2)"></li>
+                <li class="dot" onclick="current_image(3)"></li>
+                <li class="dot" onclick="current_image(4)"></li>
+            </ul>
+        </section>
+        
+        <aside id = "overlay" onclick=close_menu()></aside>
+        <article id = "foodmenu" class = "overlay-content">
+            <h2 class ="header">header</h2>
+            <img src="images&files/foodmenu.jpg" alt ="Food menu" style="width:100%;">
+        </article>
+
+        <section class = "second">
+            <h2 class ="header">header</h2>
+
+            <article class = "company">
+                <h2 >Food and Beverages</h2>
+                <p class = "foodbev-text">
+                    Not only we have great locations and activities, 
+                    but we also have the best food anywhere around, equivalent 
+                    to a 5-star restaurant, if not better. We have a variety 
+                    here that will suit your needs and desire. Chefs here have
+                    one purpose and one purpose only, to make sure every food 
+                    we make will make you want to come back for a second bite.
+                    If this is not the case, we will refund 100% of your money back.
+                    <br>
+                    <br>
+                    The food we have here are otherworldly, namely Mars, that 
+                    will let you experience the bests of flavours and taste. 
+                    Some of these are extremely rare ingredients, therefore, 
+                    we are running out of supply due to the high demands. If you 
+                    are interested, please follow up <strong>ASAP</strong> before
+                     we sold out. Below are some of our special deals, for all recipes, 
+                     refer to the <a id ="mainmenu" onclick=open_menu()><u><strong>Main menu</strong></u></a>
+                </p>
+            </article>
+
+            <article class = "foodandbevpage"> 
+                <h2 class ="header">header</h2>
+
+                <img class="bacon" src="images&files/bacon.jpg" alt ="Bacon on sticks" style="width:86%">
+                <section class = "boxcontent" id ="boxcontent11">
+                    <h2>Bacon de Coller</h2>  
+                    <p class = "description">
+                        Bacon de Coller is one of our special recipes that 
+                        on the outside may look like bacon, however,
+                        they are in fact served on sticks. This is a 
+                        limited time only recipe, get them now on arrival 
+                        for the nexr 7 days with a <u><strong>30% OFF Deal</strong></u>
+                    </p>
+                </section>
+            </article>
+
+            <article class = "foodandbevpage"> 
+                <h2 class ="header">header</h2>
+
+                <img class="fish" src="images&files/fish.jpg" alt ="Fish and Vegetables" style="width:86%">  
+                <section class = "boxcontent" id ="boxcontent12">
+                    <h2>Saumon a la koskera</h2>  
+                    <p class = "description">
+                        Saumon a la Koskera is a special recipe that brings 
+                        the best out flavour out of a fish, by frying it with
+                        thyme and rosemary to really bring out aroma that makes
+                        this dish special. Of course, this is also a limited 
+                        time recipe and is very highly demanded among some of 
+                        customers. Get this dish now in the next 3 days for a
+                        <u><strong>45% OFF Deal</strong></u>>.
+                    </p>
+                </section>
+            </article>
+
+        </section>
+
+        <footer>
+            <ul>
+                <li class = "fabout">
+                    <a href="About.html" style="text-decoration:none; color:inherit;">About Our Company</a>
+                </li>
+    
+                <li class ="logo2"><a href="Index.html" style="text-decoration:none; color:inherit;">
+                    <img src="images&files/transparentlogo.png" alt="Opportunity Logo" width = 224 height = 126></a>
+                </li>
+            </ul>
+        </footer>
+
+       <script src="js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">  
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Jason Pham">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Stay</title>
+		<link rel="stylesheet" href="css/style.css">
+        <script src = "js/jquery-3.6.0.min.js"> </script>
+	</head>
+	<body class = stay-body id = "body">
+        <nav id= "navbar" style = "width: 100%;">
+            <ul class="nav-left">
+                <li class ="logo"><a href="Index.html"><img src="images&files/transparentlogo.png" alt="Opportunity Logo" width = 224 height = 126></a></li>
+            </ul>
+
+            <ul class="nav-right">
+                <li class = "home">
+                    <a href="Index.html">Home</a>
+                </li>
+                <li class = "stay">
+                    <a href="#">Stay</a>
+                </li>
+                <li class = "activities">
+                    <a href="Activities.html">Activities</a>
+                </li>
+                <li class = "discover">
+                    <a href="Discover.html">Discover</a>
+                </li>
+                <li class = "foodandbev">
+                    <a href="Foodandbev.html">Food and Beverages</a>
+                </li>
+                <li class = "about">
+                    <a href="About.html">About</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class = "image-slider">
+            <h2 class ="header">header</h2>
+
+            <img class="mySlides imgfade" src="images&files/rsz_fort.jpg" alt ="Old left over fort" style="width:100%;">
+            <img class="mySlides imgfade" src="images&files/marshouse.jpeg" alt ="Mars House" style="width:100%">
+            <img class="mySlides imgfade" src="images&files/cave.jpeg" alt ="Cave with man inside" style="width:100%;">
+
+            <ul class = "dots" style="text-align:center">
+                <li class="dot" onclick="current_image(1)"></li>
+                <li class="dot" onclick="current_image(2)"></li>
+                <li class="dot" onclick="current_image(3)"></li>
+            </ul>
+        </section>
+
+        <section class = "second">
+            <h2 class ="header">header</h2>
+            <article class = "company">
+                <h2 >Accommodation</h2>
+                <p class = "accommo-text">
+                    Whatever you need, we have the perfect option for you.
+                     In 2016, our company used an extensive $1.4 billion in
+                      expanding our living ranges, redeveloping their aesthetics,
+                       and offering our customers more spacious accommodations. 
+                       Therefore, we always take pride in service, providing our 
+                       customers many different options that are both cheap and reliable. 
+                       <br>
+                       <br>
+                        Furthermore, the main advantage of staying at our accommodations
+                         is that we are 341.19 million km away from earth, making our 
+                         service and facilities completely COVID-free. Therefore, you 
+                         can make the most of your time without needing to worry about 
+                         the world-wide pandemic. 
+                </p>
+            </article>
+            
+            <aside id = "overlay" onclick="overlay_off()"></aside>
+
+            <section id = "bookbox-overlay" class = "overlay-content">
+                <h2>Book your reservations</h2>
+
+                <label for="startDate"><strong>Starting From:</strong></label>
+                <input type = "date" id = "startDate"
+                min ="2021-04-06" max = "2021-12-31">
+
+                <input type = "date" id = "endDate" 
+                min ="2021-04-06" max = "2021-12-31">
+                <label for="endDate"><strong>Stay Until:</strong></label>
+
+                <button class = "submit" onclick = submit()>Submit Your Booking</button>
+            </section>    
+
+            <article class = "accommodation">
+                <h2 class ="header">header</h2>
+
+                <img class="standard" src="images&files/marshouse.jpeg" alt ="Mars house" style="width:86%">
+                <section class = "boxcontent" id ="boxcontent5"> 
+                    <h2>Standard Mars Accommodation</h2>  
+                    <p class = "description">
+                        Don’t really know what you want? Our suggested is the most popular
+                         choice amongst our customers. It provides our customer with both
+                          the stone age and modern feels in both visual and functional aspects.
+                           Although the house looks like it is on the verge of collapsing, 
+                           it was purposely designed this way. There is also electricity inside
+                            for your own convenience. 
+                            Features include:<br>   
+                                - 4 floor Mats/Beds<br>
+                                - Fridge<br>
+                                - Aircon<br>
+                                - Coffee machine<br>
+                                - Shower and Bathtub<br>
+                                - Brick Chairs<br>
+                                - PlayStation 4 + GTA 6<br>
+                            <u><strong>Price: $250/Week</strong></u>
+                    </p>    
+
+                    <button class = "booknow" onclick = overlay_on()>Book now</button>
+                </section>
+            </article>
+
+            <article class = "accommodation"> 
+                <h2 class ="header">header</h2>
+
+                <img class="cave" src="images&files/cave.jpeg" alt ="Man inside a cave" style="width:86%">
+                <section class = "boxcontent" id ="boxcontent6">
+                    <h2>Caveman Style</h2>  
+                    <p class = "description">
+                        Try our extreme end accommodation that will be completely 
+                        life changing for you by the end of it. It will allow you to
+                         enjoy the full experience of stone age cavemen which involves
+                          you emerging into the life of completely no technology and electricity.
+                           You will also have to find food, water by yourself, and also
+                            fight wild animals to survive as part of the experience. 
+                            Features include: <br>
+                                -Rocks<br>
+                                -A Spear<br>
+                                -Starter pack of 600ml bottle of water <br>
+                            <u><strong>Price: $460/Week</strong></u>
+                    </p>
+                    <button class = "booknow" onclick = overlay_on()>Book now</button>
+                </section>
+            </article>
+
+            <article class = "accommodation3"> 
+                <h2 class ="header">header</h2>
+
+                <img class="fortress" src="images&files/fort.jpg" alt ="Fortress on Mars" style="width:86%">
+                <section class = "boxcontent" id ="boxcontent7">
+                    <h2>Fortress</h2>  
+                    <p class = "description">
+                        This accommodation 
+                         allows you to get the full experience of a rich person during 
+                         the 1300s, with servants at your service 24/7. You will be 
+                         provided food and water whenever desired
+                        Features include:<br>
+                            -King Sized Bed<br>
+                            -Bathtub and Shower<br>
+                            -Fridge<br>
+                            -Underground Basement<br>
+                            -Swimming Pool<br>
+                        <u><strong>Price: $899/Week</strong></u>
+                    </p>
+                    <button class = "booknow" onclick = overlay_on()>Book now</button>
+                </section>
+            </article>
+
+        </section>
+
+        <footer id = "stay-footer">
+            <ul>
+                <li class = "fabout">
+                    <a href="About.html" style="text-decoration:none; color:inherit;">About Our Company</a>
+                </li>
+    
+                <li class ="logo2"><a href="Index.html" style="text-decoration:none; color:inherit;">
+                    <img src="images&files/transparentlogo.png" alt="Opportunity Logo" width = 224 height = 126></a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/script.js"></script>
+	</body>
+</html>

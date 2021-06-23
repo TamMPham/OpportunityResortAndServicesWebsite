@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">  
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Jason Pham">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Activities</title>
+		<link rel="stylesheet" href="css/style.css">
+        <script src = "js/jquery-3.6.0.min.js"> </script>
+	</head>
+	<body class = "activities-body" id = "body">
+        <nav id= "navbar" style = "width: 100%;">
+            <ul class="nav-left">
+                <li class ="logo"><a href="Index.html"><img src="images&files/transparentlogo.png" alt="Opportunity Logo" width = 224 height = 126></a></li>
+            </ul>
+
+            <ul class="nav-right">
+                <li class = "home">
+                    <a href="Index.html">Home</a>
+                </li>
+                <li class = "stay">
+                    <a href="Stay.html">Stay</a>
+                </li>
+                <li class = "activities">
+                    <a href="#">Activities</a>
+                </li>
+                <li class = "discover">
+                    <a href="Discover.html">Discover</a>
+                </li>
+                <li class = "foodandbev">
+                    <a href="Foodandbev.html">Food and Beverages</a>
+                </li>
+                <li class = "about">
+                    <a href="About.html">About</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class = "image-slider">
+            <h2 class ="header">header</h2>
+
+            <img class="mySlides imgfade" src="images&files/camping.jpg" alt ="Group of people camping" style="width:100%">
+            <img class="mySlides imgfade" src="images&files/footballsilo.jpg" alt ="Silhouette of kid playing football" style="width:100%;">
+            <img class="mySlides imgfade" src="images&files/bikefamily.jpg" alt ="Family and their bikes" style="width:100%;">
+            <img class="mySlides imgfade" src="images&files/silojump.jpg" alt ="Silhouette of people jumping" style="width:100%;">
+            
+            <ul class = "dots" style="text-align:center">
+                <li class="dot" onclick="current_image(1)"></li>
+                <li class="dot" onclick="current_image(2)"></li>
+                <li class="dot" onclick="current_image(3)"></li>
+                <li class="dot" onclick="current_image(4)"></li>
+            </ul>
+        </section>
+        
+        <section class = "second">
+            <h2 class ="header">header</h2>
+
+            <article class = "company">
+                <h2>Activities</h2>
+                <p class = "accommo-text">
+                    <u><strong>Opportunity Resort and Services</strong></u> is a heaven for families, 
+                    friends, groups and if you just want to spend some time alone,
+                     enjoying the world. Whatever your needs may be, we have it 
+                     covered here, guaranteeing that you will have a lot of fun by the end of it.
+                      Our customers have a variety of options to choose from. They 
+                      can experience playing 0.376g while playing football, camping
+                       at exotic locations through mars and participate in Tour de 
+                       Mars which will give them an opportunity to explore and
+                        discover many different new things here.  
+                        <br>
+                        <br>
+                    Please contact one of our staff members on arrival so we
+                     can assist you with the booking process of these activities.
+                      You will need to fill out a few forms for legal purposes so
+                       we can set you up and allow you to participate. Keep in mind 
+                       that our company is very busy so please do so ASAP if you are 
+                       interested as these spots will be running out very quickly. 
+                </p>
+            </article>
+           
+            <aside id = "overlay" onclick="overlay_off()"></aside>
+
+            <section id = "bookbox-overlay" class = "overlay-content">
+                <h2>Plan and book your activity</h2>
+                
+                <label for="startDate"><strong>Starting From:</strong></label>
+                <input type = "date" id = "startDate"
+                min ="2021-04-06" max = "2021-12-31">
+
+                <label for="endDate"><strong>Stay Until:</strong></label>
+                <input type = "date" id = "endDate" 
+                min ="2021-04-06" max = "2021-12-31">
+
+                <button class = "submit" onclick = submit()>Submit Your Booking</button>
+            </section>    
+
+            <article class = "activity">
+                <h2 class ="header">header</h2>
+
+                <img class="campfire" src="images&files/rsz_campfire.jpg" alt ="Campfire" style="width:86%">
+                <section class = "boxcontent" id ="boxcontent8"> 
+                    <h2>Camping on Mars</h2>  
+                    <p class = "description">
+                        Anyone you ask has a different reason for camping. Some like
+                         to disconnect from technology and reconnect with nature. 
+                         Some families go camping to revitalize their relationships,
+                          away from all the distractions at home. Many youth organizations 
+                          teach young people how to build a fire, pitch a tent, or read a
+                           compass. Camping means different things to different people. 
+                           Some benefits of this activity include improve health both
+                            physically and mentally, digital detox, strengthen bonds and
+                             relationships, develop life skills. 
+                            <u><strong>Price: $330 for 3 days</strong></u>
+                    </p>    
+
+                    <button class = "booknow" onclick = overlay_on()>Book now</button>
+                </section>
+            </article>
+
+            <article class = "activity"> 
+                <h2 class ="header">header</h2>
+
+                <img class="football" src="images&files/Football.jpg" alt ="Kid kicking football" style="width:86%">
+                <section class = "boxcontent" id ="boxcontent9">
+                    <h2>Football on Mars</h2>  
+                    <p class = "description">
+                        As play during Football is continuous, it is great for fitness
+                         and cardiovascular health. People of various ages and skill 
+                         levels can participate in football, with those of 
+                         various sizes being able to do equally well. 
+                         football can also be a great sport for kids who
+                          may not have high levels of athletic ability,
+                           but who would like to participate in team sports.
+                            Moreover, with the location being on Mars, you 
+                            will be experiencing this at 0.376g, meaning this
+                             will feel like a completely different sport.
+                            <u><strong>Price: $45/Game</strong></u>
+                    </p>
+                    <button class = "booknow" onclick = overlay_on()>Book now</button>
+                </section>
+            </article>
+
+            <article class = "activity"> 
+                <h2 class ="header">header</h2>
+
+                <img class="fortress" src="images&files/camel.jpg" alt ="Camel on Mars" style="width:86%">
+                <section class = "boxcontent" id ="boxcontent10">
+                    <h2>Tour de Mars</h2>  
+                    <p class = "description">
+                        You probably heard of Tour de France, 
+                        but have you ever heard of Tour de Mars?
+                         Basically, the same thing but on camels and on Mars.
+                         If that does not get your interested, then I don’t know what will.
+                        <u><strong>Price: $200/Tour</strong></u>
+                    </p>
+                    <button class = "booknow" onclick = overlay_on()>Book now</button>
+                </section>
+            </article>
+
+        </section>
+
+        <footer>
+            <ul>
+                <li class = "fabout">
+                    <a href="About.html" style="text-decoration:none; color:inherit;">About Our Company</a>
+                </li>
+    
+                <li class ="logo2"><a href="Index.html" style="text-decoration:none; color:inherit;">
+                    <img src="images&files/transparentlogo.png" alt="Opportunity Logo" width = 224 height = 126></a>
+                </li>
+            </ul>
+        </footer>
+
+       <script src="js/script.js"></script>
+	</body>
+</html>
